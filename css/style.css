@@ -8,6 +8,7 @@
 }
 body {
     overflow-x: hidden;
+    color:#353535;
 }
 a {
     text-decoration: none;
@@ -22,8 +23,9 @@ header {
     align-items: center;
 }
 .ul-list {
+    font-family: 'Merriweather', serif;
     display: flex;
-    padding: 1em 2em;
+    padding: 2em .4em 1em;
 }
 .list-link {
     padding: 1em .5em;
@@ -37,25 +39,51 @@ header {
 .plant-title {
 text-align: center;
 }
+.title-hero {
+    font-family: 'Fira Sans', sans-serif;
+}
+.sub-hero {
+    padding-top: 1em;
+    font-family: 'Merriweather', serif;
+}
 .plant-showcase {
     padding-top: 1em;
 }
 .hero-container {
     padding: 1em 2em;
 }
+.plant-title{
+    font-family: 'Fira Sans', sans-serif;
+    font-size:2.3em;
+}
 .plant-tile {
-    padding-top:3em;
+    position: relative;
+    padding-top:2em;
     max-width: 80%;
     margin: 0 auto;
+}
+.plant-descs
+{
+    text-align: left;
 }
 .plant-tile-content{
     padding: 1em .5em;
     text-align: center;
 }
 
+.plant-name {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.plant-price {
+    padding-top: .2em;
+    font-family: 'Merriweather', serif;
+}
+
 .plant-tile-img {
     padding-top: 1em;
-    max-width: 70%;
+    max-width: 85%;
 }
 .container-left {
     display: flex;
@@ -79,6 +107,32 @@ text-align: center;
     text-align: center;
 }
 .footer-div {
-    font-family: 'Source Sans Pro', sans-serif;
     padding-top:1em;
+}
+
+@media only screen and (min-width:768px)
+{
+    .ul-list {
+        justify-content: space-evenly;
+    }
+    .title-hero {
+        font-size: 2.2em;
+    }
+    .hero-container {
+        padding:4em;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        align-items: center;
+        grid-column-gap: 1em;
+    }
+    .left-side {
+        padding:1em;
+    }
+    .plant-title {
+        font-size: 3.5em;
+        padding: 1em;
+    }
+    .plant-tile-content {
+        padding: 3em;
+    }
 }
