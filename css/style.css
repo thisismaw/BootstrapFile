@@ -21,9 +21,13 @@ header {
     justify-content: space-between;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+    position: relative;
+    padding-bottom: 1em;
 }
+
 .ul-list {
-    font-family: 'Merriweather', serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
     display: flex;
     padding: 2em .4em 1em;
 }
@@ -82,7 +86,7 @@ text-align: center;
 }
 
 .plant-tile-img {
-    padding-top: 1em;
+    padding-top: 2em;
     max-width: 85%;
 }
 .container-left {
@@ -107,6 +111,7 @@ text-align: center;
     text-align: center;
 }
 .footer-div {
+    font-family: 'Fira Sans', sans-serif;
     padding-top:1em;
 }
 
@@ -117,6 +122,9 @@ text-align: center;
     }
     .title-hero {
         font-size: 2.2em;
+    }
+    .sub-hero{
+        line-height: 1.4;
     }
     .hero-container {
         padding:4em;
@@ -130,9 +138,35 @@ text-align: center;
     }
     .plant-title {
         font-size: 3.5em;
-        padding: 1em;
+        padding: 1em .5em .5em;
     }
     .plant-tile-content {
         padding: 3em;
+    }
+}
+
+@media only screen and (min-width:1024px)
+{
+.plant-container {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+}
+.footer-container {
+    display:flex;
+    justify-content:space-evenly;
+}
+.plant-tile-content { 
+    padding:1.5em;
+}
+}
+
+@media only screen and (min-width:1440px)
+{
+    .plant-tile-content { 
+        padding:1.5em;
+    } 
+    .plant-hero {
+        padding: 3em 6em;
     }
 }
