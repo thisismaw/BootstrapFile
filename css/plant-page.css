@@ -6,9 +6,125 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+    a {
+        text-decoration: none;
+    }
+    p {
+        font-family: 'Merriweather', serif;
+    }
+    li {
+        list-style-type: none;
+    }
 .wrapper-column {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid grid-template-areas: ;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3" 
+    "sidebar content4 content5 content6"
+    "footer footer footer footer"
+    ;
+    gap: .2em;
+}
+.navbar {
+    grid-area: nav;
+}
+.list-container {
+    padding: 1.2em 0em 1em 3em;
+    display: flex;
+}
+.list-link {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 2em 2.2em;
+    color: black;
+    font-weight: 700;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background:#ffcdb2 ;
+}
+.main {
+    background: #b5838d;
+    grid-area: main;
+    padding:2em;
+}
+.main-header {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.3em;
+}
+.plant-content-opener {
+padding-top: 1em;
+}
+.content1 {
+    background: #2a9d8f;
+    grid-area:content1;
+}
+.content2 {
+    background: #fcbf49;
+    grid-area: content2;
+}
+.content3 {
+    background: #a8dadc;
+    grid-area:content3;
+}
+.content4 {
+    background: #dda15e;
+    grid-area:content4;
+
+}
+.content5 {
+    background: #fec89a;
+    grid-area:content5;
+}
+.content6 {
+    background: #ccd5ae;
+    grid-area:content6;
+}
+.footer{
+    background:#52b788;
+    grid-area:footer;
+}
+.footer-div {
+    font-family: 'Fira Sans', sans-serif;
+    padding:1em 0em;
+    text-align: center;
+}
+.container-left {
+    display: flex;
+}
+.social-list {
+    margin-left: .4em;
+    display: flex;
+}
+.photo-social {
+    padding:0em .5em;
+}
+.footer-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+
+}
+@media only screen and (max-width: 550px) 
+{
+.wrapper-column {
+    height:100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.5fr 2.2fr 1.3fr;
+    grid-template-areas:
+    "nav"
+    "sidebar"
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "content4"
+    "content5"
+    "content6"
+    "footer";
+}
+
 }

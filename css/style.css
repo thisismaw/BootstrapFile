@@ -176,6 +176,9 @@ text-align: center;
 
 @media only screen and (min-width:2560px)
 {
+    body {
+        padding:0em 20em;
+    }
     .title-hero {
         font-size: 3.2em;
     }
