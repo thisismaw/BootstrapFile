@@ -24,55 +24,6 @@ header {
     position: relative;
     padding-bottom: 1em;
 }
-button {
-    background:none;
-    color:black;
-    transform: translate(-50%,-50%);
-    max-width: 90%;
-    height: auto;
-    border:1px solid black;
-    font-size: 1.2em;
-    padding: 1em;
-    border-radius: 1em;
-    transition: 4s; 
-    overflow:hidden;
-}
-button:focus {
-    outline:none;
-}
-button::before {
-    content:"";
-    display:block;
-    background: none;
-    height: auto;
-    opacity: .5s;
-    filter: blur(30px);
-    transform: translateX(-130px) skewX(-15deg);
-}
-button:after {
-    content:"";
-    display:block;
-    background: gray;
-    opacity: 0;
-    filter: blur(30px);
-    transform:translate(-100px) scaleX(-15deg)
-}
-button:hover {
-    cursor: pointer;
-    background:#343a40;
-    color: white;
-}
-
-button:hover::before {
-  transform:translateX(300px) skewX(-15deg);
-  opacity: .6;
-  transition: 5s;
-}
-button:hover::after {
-  transform:translateX(300px) skewX(-15deg);
-  opacity: 1;
-  transition: 5s;
-}
 
 .ul-list {
     font-family: 'Fira Sans', sans-serif;
