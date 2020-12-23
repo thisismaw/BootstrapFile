@@ -3,26 +3,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --maincolor:#004b23;
 }
-h1,p,a {
+h1,p,a, h3{
+    color:white;
     font-family: 'Open Sans', sans-serif;
+}
+body {
+background: #344e41;
 }
 ul {
     list-style-type: none;
 }
 header {
+
     display:grid;
     padding: 2em 4em;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     margin:0 auto;
 }
+
 nav {  
     text-align: right;
 }
 .link-container ul {
     display:inline-block;
+    margin-right: 5em;
 }
 .link-container ul li {
     display: inline-block;
@@ -33,15 +39,15 @@ nav {
     display: block;
     padding: .5em;
     text-decoration: none;
-    color:#3a5a40;
+    color:white;
 
 }
 .link-container ul li a::after{
-content: "";
+content:"";
 display:block;
 width:0;
 height:2px;
-background:#3a5a40;
+background:white;
 transition:width .2s;
 }
 
@@ -60,7 +66,7 @@ transition:width .2s;
     overflow: hidden;
 }
 .brand-title {
-    color:#004b23;
+    color:white;
     text-decoration: none;
     font-size: 1em;
     transition:0.5s;
@@ -88,40 +94,54 @@ transition:width .2s;
     height: 800px;
 }
 .plant-c {
+    position:relative;
     font-family: 'Open Sans', sans-serif;
     padding: 2em 0 1em;
     text-align: center;
     font-size: 2rem;
 }
 .image-wrapper {
+    position:relative;
     margin: 0 auto;
     padding: 1.5em;
-    width:40%;
+    width:50%;
     display:grid;
     grid-auto-flow:dense;
-    grid-template-columns: repeat(4 , 1fr );
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 1em;
 }
-.image-wrapper .imgbox .pic-box img {
+.imgbox {
+    border:1px solid white;
+}
+
+.image-wrapper .imgbox img {
+    padding: 10px;
     max-width: 100%;
     height: auto;
 }
+.details {
+    padding:1em;
+}
 
+.footer-div {
+
+    padding:2em;
+}
 .footer-container {
-    margin-top:10em;
-    color:white;
-    background: #344e41;
+    background:white;
+    display:flex;
     align-items: center;
-    text-align: center;
-    padding: 2em;
-    display:grid;
-    grid-template-columns:  ; 
+    justify-content:center;
+}
+.footer-container p {
+    color:black;
 }
 .container-left {
+    margin-right: 1em;
+    align-items: center;
     display:flex;
-    align-items:center;
 }
-.social-item {
-    margin-left: 10px;
+.social-item{
+    margin-left:1em;
     display:inline-block;
 }
