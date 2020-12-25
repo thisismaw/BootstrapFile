@@ -22,7 +22,7 @@ header {
     grid-template-columns: 1fr 1fr;
     margin:0 auto;
 }
-
+A
 nav {  
     text-align: right;
 }
@@ -127,7 +127,14 @@ width: 100%;
 .details {
     padding:1em;
 }
-
+.benefit-wrapper {
+    position:relative;
+    left:10%;
+    padding:1em;
+}
+.benefit-wrapper h1 {
+    font-size:
+}
 .footer-div {
 
     padding:2em;
