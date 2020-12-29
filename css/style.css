@@ -155,7 +155,15 @@ width: 100%;
     margin-left:1em;
     display:inline-block;
 }
-
+.benefit-wrapper {
+    
+}
+.benefit-wrapper h1{
+font-size:2.5em;
+}
+.benefit-wrapper li{
+    font-size:1.5em;
+    }
 @media screen and (max-width:1440px)
 {
 .left-side{
