@@ -156,7 +156,8 @@ width: 100%;
     display:inline-block;
 }
 .benefit-wrapper {
-    
+    margin:0 auto;
+    padding-left:2em;
 }
 .benefit-wrapper h1{
 font-size:2.5em;
