@@ -6,10 +6,14 @@
 }
 h1,p,a, h3, li{
     color:white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body {
-background: #344e41;
+background-color: #D0D9C9;
+
+}
+.header-container, .hero-container {
+    background: #344e41;
 }
 ul {
     list-style-type: none;
@@ -58,7 +62,7 @@ transition:width .2s;
 .hero-container {
     position: relative;
     margin:auto;
-    width: 80%;
+    width: 100%;
     display:grid;    
     padding: 2em;
     grid-template-columns: 1fr 1fr;
@@ -164,6 +168,9 @@ font-size:2.5em;
 }
 .benefit-wrapper li{
     font-size:1.5em;
+    }
+    .plant-c h1{
+color:#344e41;;
     }
 @media screen and (max-width:1440px)
 {
