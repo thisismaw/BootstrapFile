@@ -178,11 +178,15 @@ width: 100%;
     font-size:2.5em;
 }
 .benefit-wrapper ul{
+    list-style: disc;
     padding: 1em 0;
     margin: auto;
     width:25%;
     display:block;
     font-size:1.5em;
+    }
+    .benefit-wrapper li {
+        padding : 10px 0;
     }
     .plant-c h1{
 color:#344e41;
